@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+  echojs1:
+    image: echojs:2
+    container_name: echojs01
+    ports:
+      - "10001:9999"
+    restart: always
+    environment:
+      CONTAINER_NAME: echojs01
+
+  echojs2:
+    image: echojs:2
+    container_name: echojs02
+    ports:
+      - "10002:9999"
+    restart: always
+    environment:
+      CONTAINER_NAME: echojs02
+
+  echojs3:
+    image: echojs:2
+    container_name: echojs03
+    ports:
+      - "10003:9999"
+    restart: always
+    environment:
+      CONTAINER_NAME: echojs03
